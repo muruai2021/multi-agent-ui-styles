@@ -1,0 +1,35 @@
+# UI Styles Skill — 运行时配置
+# 配置文件为空模板，实际使用时按需填写
+
+skill: ui-styles
+version: 1.0.0
+
+# 默认返回的CSS格式
+css_format: variables  # variables | tailwind | plain
+
+# 默认主题（当用户未指定时）
+default_theme: auto     # auto | dark | light
+
+# 返回内容的详细程度
+verbosity: normal       # minimal | normal | verbose
+
+# 是否包含示例代码
+include_examples: true
+
+# 默认的Tailwind配置格式
+tailwind_version: "3.x"  # "2.x" | "3.x"
+
+# 设计系统文件路径（相对或绝对路径）
+design_system_path: "./"
+
+# 缓存配置（用于记忆用户最近的风格选择）
+cache:
+  enabled: true
+  ttl_seconds: 3600
+  max_entries: 10
+
+# 可选的第三方设计系统扩展（预留接口）
+extensions: []
+  # - name: custom-brand
+  #   path: ./custom-brand.md
+  #   enabled: true
